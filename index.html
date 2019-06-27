@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <form>
-    <input type="number" id="get_no1" name="numb1"> 
-    <input type="number" id="get_no2" name="numb2">
-   <input type="submit" value="print" onclick="show()">
-</form>
-    <script >
-    function show(){
+        <input type="number" id="get_no1" name="numb1">
+        <input type="number" id="get_no2" name="numb2">
+        <input type="submit" value="print" onclick="show()">
+    </form>
+    <script>
+        function show() {
 
-let Number1 = parseInt(document.querySelector('input#get_no1').value);
-let Number2 = parseInt(document.querySelector('input#get_no2').value);
-for(let i=Number1; i<=Number2; i++){
-   
-console.log(i);
-}
-}
+            let Number1 = parseInt(document.querySelector('input#get_no1').value);
+            let Number2 = parseInt(document.querySelector('input#get_no2').value);
+            if (Number1 < Number2) {
+                for (let i = Number1; i <= Number2; i++) {
+                    console.log(i);
+                    //document.write(i);
+                }
+            }
+            if (Number1 > Number2) {
+           for (let i = Number2; i <= Number1; i--) {
+                    console.log(i);
+                    //document.write(i);
+
+
+                }
+            }
+        }
     </script>
 </body>
+
 </html>
