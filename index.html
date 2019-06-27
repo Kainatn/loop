@@ -17,23 +17,31 @@
     <script>
         function show() {
 
-            let Number1 = parseInt(document.querySelector('input#get_no1').value);
-            let Number2 = parseInt(document.querySelector('input#get_no2').value);
-            if (Number1 < Number2) {
-                for (let i = Number1; i <= Number2; i++) {
-                    console.log(i);
-                    //document.write(i);
-                }
-            }
-            if (Number1 > Number2) {
-           for (let i = Number2; i <= Number1; i--) {
-                    console.log(i);
-                    //document.write(i);
+            //for (let i = 100; i >= 1; i--) {
+                //     console.log(i);
 
-
+                // }
+                let Number1 = parseInt(document.querySelector('input#get_no1').value);
+                let Number2 = parseInt(document.querySelector('input#get_no2').value);
+                if (Number1 < Number2) {
+                    for (let i = Number1; i <= Number2; i++) {
+                        //console.log(i);
+                        document.write(i+"\n");
+                    }
                 }
-            }
-        }
+                if (Number1 > Number2) {
+    
+               for (let i = Number1; i >= Number2; i--) {
+                    console.log(i);
+                    document.write(i+"\n");
+    
+    
+                    }
+                }
+                
+                }
+                
+            
     </script>
 </body>
 
